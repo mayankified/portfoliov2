@@ -3,31 +3,16 @@ import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { FaInstagram, FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
-import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, addDoc } from 'firebase/firestore';
 import { toast } from 'react-toastify';
+import axios from 'axios';
 
 
 
 
 const Contacts = () => {
-  
-  
-  const firebaseConfig = {
-    apiKey: "AIzaSyDawhXUVn6LaE4jtINQtplw2H_Z51BcSkE",
-    authDomain: "portfolio-tinu.firebaseapp.com",
-    databaseURL: "https://portfolio-tinu-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "portfolio-tinu",
-    storageBucket: "portfolio-tinu.appspot.com",
-    messagingSenderId: "133687127336",
-    appId: "1:133687127336:web:09d3bacc0d0256950fb41d"
-  };
-  
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-  
-  const [data, setdata] = useState([])
+
+
+  const [data, setdata] = useState({email:'',message:''})
 
   const controls = useAnimation();
   const { ref, inView } = useInView();
@@ -38,31 +23,29 @@ const Contacts = () => {
     }
   }, [controls, inView]);
 
+
   const submitHandler = async (e) => {
     const { email, message } = data;
+    const msg = encodeURI(`Hello Boss🫡! someone remembered you..\n Email: ${email}\nMessage: ${message}`)
+
     e.preventDefault();
-    if(email&&message){
+    if (email && message) {
       try {
-      
-        // Add form data to Firestore
-        console.log("shreya");
-        await addDoc(collection(db, 'contactForms'), {
-          email:email,
-          message:message
-        });
-  
-        toast("Message sent successfully")
-        setdata({
-          email: '',
-          message: ''
-        });
+
+        await axios.post(`https://api.telegram.org/bot6824661380:AAEsjkVBLbpMTN095uZh-KfIlD4joE6K3YU/sendMessage?chat_id=5274938130&text=${msg}`)
+          toast("Message sent successfully")
+          setdata({
+            email: '',
+            message: ''
+          });
+          
       } catch (error) {
-        console.error('Error adding document to Firestore: ', error);
+        console.error('Error sending message', error);
       }
-    }else{
+    } else {
       toast.error("Fill the empty field")
     }
-    
+
   };
 
   const valueupdate = (e) => {
@@ -82,9 +65,9 @@ const Contacts = () => {
           }}
           transition={{ duration: 1, type: 'spring' }}
           animate={controls}
-          
+
           className="bg-[#131312] text-[#b5b4b4] p-6 rounded-lg">
-            <h4 className='text-center text-[18px] pb-2'>For any help or project collaboration</h4>
+          <h4 className='text-center text-[18px] pb-2'>For any help or project collaboration</h4>
           <form ref={ref} onSubmit={submitHandler} className="flex flex-col">
             <div className="flex flex-col p-4">
               <label className='mb-4'>Your Email</label>
