@@ -9,8 +9,10 @@ const Nav = () => {
     return (
         <div className=' z-40 w-full h-fit flex fixed bottom-0 justify-center mb-2'>
             <div className="flex flex-col ">
-                <div className="border border-gray-300 py-3 flex gap-1 shadow-xl rounded-md bg-[#fefeffb8]">
-                    <div className="group relative px-4 cursor-pointer">
+                <div className="border border-gray-300 py-3 flex gap-1 shadow-xl rounded-md bg-[#fefeffb8] px-2">
+
+
+                    <div className="group relative xs:px-4 px-1 cursor-pointer">
                         <a href='#hero'  className="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500">
                         <IoHomeOutline  className='text-[22px] '/>
                         </a>
@@ -18,7 +20,7 @@ const Nav = () => {
                             Home
                         </span>
                     </div>
-                    <div className="group relative px-4 cursor-pointer">
+                    <div className="group relative xs:px-4 px-1 cursor-pointer">
                         <a href='#about' className="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500">
                         <FaRegUser className='text-[20px] '/>
                         </a>
@@ -26,7 +28,7 @@ const Nav = () => {
                             About
                         </span>
                     </div>
-                    <div className="group relative px-4 cursor-pointer">
+                    <div className="group relative xs:px-4 px-1 cursor-pointer">
                         <a href='#skills' className="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500">
                         <PiMedalDuotone className='text-[23px] '/>
                         </a>
@@ -34,7 +36,7 @@ const Nav = () => {
                             Skills
                         </span>
                     </div>
-                    <div className="group relative px-4 cursor-pointer">
+                    <div className="group relative xs:px-4 px-1 cursor-pointer">
                         <a href='#project' className="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500">
                         <FaPencil className='text-[19px] '/>
                         </a>
@@ -42,7 +44,7 @@ const Nav = () => {
                             Projects
                         </span>
                     </div>
-                    <div className="group relative px-4 cursor-pointer">
+                    <div className="group relative xs:px-4 px-1 cursor-pointer">
                         <a href='#contact' className="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500">
                         <IoChatboxOutline className='text-[22px] mt-1'/>
                         </a>

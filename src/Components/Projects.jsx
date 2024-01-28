@@ -23,10 +23,10 @@ const Projects = () => {
             layout
             transition={{ layout: { type: 'just' } }}
             onClick={() => { setp1(!p1) }}
-            className={`${p1 ? "w-[90%] h-[90%]" : "sm:w-[40%] sm:h-[40%]"} ${(p2 | p3 | p4) ? "hidden" : "flex"} cursor-pointer md:flex-row flex-col bg-[#131312] py-10 text-[#fff] m-4  px-6 rounded-3xl`}>
+            className={`${p1 ? "w-[90%] h-[90%]" : "md:w-[40%] sm:h-[40%]"} ${(p2 | p3 | p4) ? "hidden" : "flex"} cursor-pointer md:flex-row flex-col bg-[#131312] py-10 text-[#fff] m-4  px-6 rounded-3xl`}>
             <div className='flex flex-col p-4 w-full'>
               <h1 className=' sm:text-[36px] text-[26px] '>Mern TODO App</h1>
-              <p className='max-w-[500px] text-[18px] leading-7 my-4'> 🚀 Developed a dynamic Todo application using the MERN stack. What sets this app apart is its robust user authentication system, seamlessly integrated with Redux Toolkit for state management.</p>
+              <p className='max-w-[500px]  sm:text-[18px] text-[16px] leading-7 my-4'> 🚀 Developed a dynamic Todo application using the MERN stack. What sets this app apart is its robust user authentication system, seamlessly integrated with Redux Toolkit for state management.</p>
               <div className={`${p1 ? "flex" : "hidden"} flex-col`}>
                 <h2 className='font-semibold text-[23px] py-2'>Features</h2>
                 <p className='leading-7'>
@@ -79,10 +79,10 @@ const Projects = () => {
             layout
             transition={{ layout: { type: 'just' } }}
             onClick={() => { setp2(!p2) }}
-            className={`${p2 ? "w-[90%] h-[90%]" : "sm:w-[40%] sm:h-[40%]"} ${(p3 | p1 | p4) ? "hidden" : "flex"} cursor-pointer md:flex-row flex-col bg-[#131312] py-10 text-[#fff] m-4  px-6 rounded-3xl`}>
+            className={`${p2 ? "w-[90%] h-[90%]" : "md:w-[40%] sm:h-[40%]"} ${(p3 | p1 | p4) ? "hidden" : "flex"} cursor-pointer md:flex-row flex-col bg-[#131312] py-10 text-[#fff] m-4  px-6 rounded-3xl`}>
             <div className='flex flex-col p-4 w-full'>
               <h1 className=' sm:text-[36px] text-[26px]  '>CrypTinu</h1>
-              <p className='max-w-[500px] text-[18px] leading-7 my-4'>
+              <p className='max-w-[500px]  sm:text-[18px] text-[16px] leading-7 my-4'>
                 📈 Built a dynamic Crypto Tracking App with React, utilizing public APIs to display comprehensive details of crypto coins. 🪙 The app also features interactive graphs showcasing coin performance across various timelines.
 
               </p>
@@ -133,10 +133,10 @@ const Projects = () => {
             layout
             transition={{ layout: { type: 'just' } }}
             onClick={() => { setp3(!p3) }}
-            className={`${p3 ? "w-[90%] h-[90%]" : "sm:w-[40%] sm:h-[40%]"} ${(p2 | p1 | p4) ? "hidden" : "flex"} cursor-pointer md:flex-row flex-col bg-[#131312] py-10 text-[#fff] m-4  px-6 rounded-3xl`}>
+            className={`${p3 ? "w-[90%] h-[90%]" : "md:w-[40%] sm:h-[40%]"} ${(p2 | p1 | p4) ? "hidden" : "flex"} cursor-pointer md:flex-row flex-col bg-[#131312] py-10 text-[#fff] m-4  px-6 rounded-3xl`}>
             <div className='flex flex-col p-4 w-full'>
               <h1 className=' sm:text-[36px] text-[26px]  '>Art Studio Website</h1>
-              <p className='max-w-[500px] text-[18px] leading-7 my-4'>
+              <p className='max-w-[500px]  sm:text-[18px] text-[16px] leading-7 my-4'>
                 🏺 Crafted an immersive Art Showcase Website for a pottery studio during Google Winter of Code (GWOC). 🎨 The platform beautifully showcases unique pottery pieces, providing a visual journey into the studio's artistic creations.
 
               </p>

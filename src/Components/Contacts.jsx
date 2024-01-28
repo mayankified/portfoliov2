@@ -71,7 +71,7 @@ const Contacts = () => {
 
   return (
     <div id='contact' className='h-[100vh] flex flex-col items-center justify-between w-full'>
-      <div>
+      <div className="ss:w-fit w-[80%]" >
         <h2 className='sm:text-[90px] text-center text-[60px]'>Contacts.</h2>
         <motion.div
 
@@ -98,7 +98,8 @@ const Contacts = () => {
           </form>
         </motion.div>
       </div>
-      <div className='w-full flex justify-between items-center px-20 text-white h-[130px] bg-[#131212]'>
+
+      <div className='w-full flex md:flex-row flex-col justify-between items-center px-20 text-white h-[130px] pt-2 md:pb-0 pb-[175px] bg-[#131212]'>
 
         <div>
 

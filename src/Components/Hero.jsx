@@ -58,10 +58,10 @@ const Hero = () => {
         ></motion.div>
       )}
       <div id='hero' className='w-full h-[100vh] justify-center z-10 flex flex-col items-center'>
-        <h1 className='font-caveat px-3 font-bold sm:text-[130px] text-[80px] herotext text-center'>
+        <h1 className='font-caveat px-3 font-bold sm:text-[130px] text-[80px] herotext text-center sm:leading-[160px] leading-[80px]'>
           Mayank Kashyap
         </h1>
-        <p className='max-w-[600px]  sm:text-[36px] text-[25px] font-poppins text-center '>
+        <p className='max-w-[600px]  sm:text-[36px] text-[25px] font-poppins text-center pt-4'>
           An Engineering Student & <br /> Web Developer.
         </p>
       </div>
