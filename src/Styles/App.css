@@ -1,0 +1,72 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: Poppins;
+  scroll-behavior: smooth;
+}
+
+.herotext {
+  background: url("../assets/tenor.gif");
+  /* background: linear-gradient(to right, #121FCF 0%, #CF1512 100%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav {
+  filter: drop-shadow(5px 5px 10px #0000008d);
+}
+
+.facebook:hover {
+  background: linear-gradient(45deg, #383e4b, #727276, #c5b9b9);
+}
+
+.linkedin:hover {
+  background: linear-gradient(45deg, #134ac0, #316ff6, #78a3ff);
+}
+
+.instagram:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.cursor {
+  box-shadow: 0 0 20px #131212, 0 0 80px #131212, 0 0 150px #131212;
+}
+.cursor::before{
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 50px;
+  height: 50px;
+  opacity: 0.2;
+  transform: translate(-30%,-30%);
+  border-radius: 50%;
+}
