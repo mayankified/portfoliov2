@@ -7,7 +7,6 @@ const Hero = () => {
     y: 0,
   });
 
-  const [isMouseInWindow, setIsMouseInWindow] = useState(true);
 
   useEffect(() => {
     const mouseMove = (e) => {
@@ -17,23 +16,13 @@ const Hero = () => {
       });
     };
 
-    const mouseLeave = () => {
-      setIsMouseInWindow(false);
-    };
 
-    const mouseEnter = () => {
-      setIsMouseInWindow(true);
-    };
 
     window.addEventListener('mousemove', mouseMove);
-    window.addEventListener('mouseleave', mouseLeave);
-    window.addEventListener('mouseenter', mouseEnter);
 
     // Cleanup listeners on component unmount
     return () => {
       window.removeEventListener('mousemove', mouseMove);
-      window.removeEventListener('mouseleave', mouseLeave);
-      window.removeEventListener('mouseenter', mouseEnter);
     };
   }, []);
 
@@ -49,14 +38,15 @@ const Hero = () => {
   };
 
   return (
-    <>
-      {isMouseInWindow && (
+    <div className=''>
+      <div className='ss:block h-0 hidden'>
         <motion.div
           variants={variants}
-          animate={isMouseInWindow ? 'visible' : 'hidden'}
+          animate={'visible'}
           className='cursor pointer-events-none fixed z-30 rounded-full w-5 h-5 top-0 left-0 bg-[#131312b5]'
         ></motion.div>
-      )}
+      </div>
+
       <div id='hero' className='w-full h-[100vh] justify-center z-10 flex flex-col items-center'>
         <h1 className='font-caveat px-3 font-bold sm:text-[130px] text-[80px] herotext text-center sm:leading-[160px] leading-[80px]'>
           Mayank Kashyap
@@ -65,7 +55,7 @@ const Hero = () => {
           An Engineering Student & <br /> Web Developer.
         </p>
       </div>
-    </>
+    </div>
   );
 };
 

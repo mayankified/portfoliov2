@@ -88,7 +88,7 @@ const Contacts = () => {
           <form ref={ref} onSubmit={submitHandler} className="flex flex-col">
             <div className="flex flex-col p-4">
               <label className='mb-4'>Your Email</label>
-              <input value={data.email} onChange={valueupdate} required="" className='bg-[#131312] outline-none focus:border-[#fefeff] p-2 border-[#747373] text-[#fefeff] rounded-md border-2 ' name="email" id="email" type="text" />
+              <input value={data.email} onChange={valueupdate} required="" className='bg-[#131312] outline-none focus:border-[#fefeff] p-2 border-[#747373] text-[#fefeff] rounded-md border-2 ' name="email" id="email" type="email" />
             </div>
             <div className="flex flex-col p-4">
               <label >Message</label>
