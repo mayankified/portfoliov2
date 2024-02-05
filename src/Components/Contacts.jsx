@@ -70,12 +70,12 @@ const Contacts = () => {
           <h4 className='text-center text-[18px] pb-2'>For any help or project collaboration</h4>
           <form ref={ref} onSubmit={submitHandler} className="flex flex-col">
             <div className="flex flex-col p-4">
-              <label className='mb-4'>Your Email</label>
+              <label className=''>Your Email</label>
               <input value={data.email} onChange={valueupdate} required="" className='bg-[#131312] outline-none focus:border-[#fefeff] p-2 border-[#747373] text-[#fefeff] rounded-md border-2 ' name="email" id="email" type="email" />
             </div>
             <div className="flex flex-col p-4">
               <label >Message</label>
-              <textarea value={data.message} name='message' onChange={valueupdate} className='bg-[#131312] outline-none focus:border-[#fefeff] p-2 border-[#747373] text-[#fefeff] rounded-md border-2 ' required='' cols="30" rows="5" id="textarea" />
+              <textarea value={data.message} name='message' onChange={valueupdate} className='bg-[#131312] outline-none focus:border-[#fefeff] p-2 border-[#747373] text-[#fefeff] rounded-md border-2 ' required='' cols="30" rows="3" id="textarea" />
             </div>
             <button type="submit" className="py-2 px-4 mx-auto text-[#131312] bg-[#fefeff] rounded-lg font-poppins hover:bg-[#909090] font-semibold">Submit</button>
           </form>
@@ -87,11 +87,11 @@ const Contacts = () => {
         <div>
 
           <div className="w-full z-50 flex justify-around">
-            <a href="#" className="w-[50px] z-50 rounded-full p-3 m-2 h-[50px] facebook"
+            <a href="https://github.com/mayankified" className="w-[50px] z-50 rounded-full p-3 m-2 h-[50px] facebook"
             ><FaGithub className='w-full h-full' /></a>
-            <a href="#" className="w-[50px] z-50 m-2 rounded-full p-3 h-[50px] instagram"
+            <a href="https://www.instagram.com/mynkashh" className="w-[50px] z-50 m-2 rounded-full p-3 h-[50px] instagram"
             ><FaInstagram className='w-full h-full' /></a>
-            <a href="#" className="w-[50px] z-50 m-2 rounded-full p-3 h-[50px] linkedin"
+            <a href="https://www.linkedin.com/in/mayank-kashyap-20114a24b/" className="w-[50px] z-50 m-2 rounded-full p-3 h-[50px] linkedin"
             ><FaLinkedin className='w-full h-full' /></a>
           </div>
 

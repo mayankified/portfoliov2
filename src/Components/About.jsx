@@ -6,7 +6,7 @@ const About = () => {
     const x = useTransform(scrollYProgress, [0, 1], [-200, 1000]);
 
     return (
-        <div id='about' className='sm:h-[80vh] h-[60vh] w-full overflow-hidden'>
+        <div id='about' className='sm:h-[80vh] pointer-events-none h-[60vh] w-full overflow-hidden'>
             <div className='flex lg:flex-row flex-col items-center'>
                 <motion.h1 style={{ x }} className='sm:text-[250px] text-[100px] top-0 left-[-200px] text-[#0000004d] font-bold font-poppins'>About.</motion.h1>
                 <p className=' sm:text-[30px] text-[23px] px-20 lg:px-6'>

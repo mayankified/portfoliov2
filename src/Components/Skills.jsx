@@ -73,7 +73,7 @@ const Skills = () => {
   }, [controls, inView]);
 
   return (
-    <div id='skills' className='h-auto min-h-[100vh] w-full py-6 sm:px-20 px-4'>
+    <div id='skills' className='h-auto min-h-[100vh] pointer-events-none w-full py-6 sm:px-20 px-4'>
       <div className=''>
         <h1 className='sm:text-[90px] text-[60px]'>Skills.</h1>
         <div className='max-w-[600px] sm:text-[26px] text-[23px] my-10'>

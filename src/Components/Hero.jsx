@@ -38,7 +38,7 @@ const Hero = () => {
   };
 
   return (
-    <div className=''>
+    <div className='pointer-events-none'>
       <div className='ss:block h-0 hidden'>
         <motion.div
           variants={variants}
