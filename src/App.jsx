@@ -8,6 +8,7 @@ import Projects from './Components/Projects'
 import Contacts from './Components/Contacts'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loader from './Components/Loader'
 
 const App = () => {
   return (

@@ -10,13 +10,13 @@ const Projects = () => {
   const [p1, setp1] = useState(false)
   const [p2, setp2] = useState(false)
   const [p3, setp3] = useState(false)
-  const [p4, setp4] = useState(false)
 
 
   return (
     <div id='project' className='w-full mb-20  min-h-[100vh] sm:px-20 px-4'>
-      <div className='h-full'>
+      <div className='h-full w-full'>
         <h1 className='sm:text-[90px] text-[60px]'>Projects.</h1>
+        <p className='sm:text-[20px] text-[16px]'>Currently working on a feature-rich E-commerce project.</p>
         <motion.div layout className='w-full justify-center flex sm:flex-row flex-col h-fit items-center flex-wrap'>
 
           <motion.div
