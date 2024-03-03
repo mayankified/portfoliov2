@@ -23,7 +23,7 @@ const skill = [
   {
     "id": 4,
     "name": 'React.js',
-
+    
   },
   {
     "id": 5,
@@ -35,8 +35,7 @@ const skill = [
   },
   {
     "id": 7,
-    "name": 'Tailwind CSS',
-
+    "name": 'Next.js',
   },
   {
     "id": 8,
@@ -58,7 +57,17 @@ const skill = [
     "id": 12,
     "name": 'SaSS',
   },
+  {
+    "id": 13,
+    "name": 'Tailwind CSS',
 
+  },
+  {
+    "id": 14,
+    "name": 'DBMS',
+
+  },
+  
 ]
 
 const Skills = () => {

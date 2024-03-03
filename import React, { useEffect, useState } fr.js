@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import useScript from '../Hooks/useScript';
 
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({
@@ -34,7 +33,6 @@ const Hero = () => {
       y: mousePosition.y - 16,
     },
   };
-  // useScript('')
 
   return (
     <div className='pointer-events-none'>
