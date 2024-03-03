@@ -59,11 +59,11 @@ const Hero = () => {
       </div>
 
       <div id='hero' className='w-full h-[100vh] justify-center z-10 flex flex-col items-center'>
-        <h1 className=' overflow-visible px-3 font-bold ss:text-[130px] text-[60px] herotext text-center '>
+        <h1 className=' overflow-visible font-caveat px-3 font-bold ss:text-[130px] text-[60px] herotext text-center '>
 
           {/* मयंक कश्यप */}
-          {/* Mayank Kashyap */}
-          <TextTransition delay={1} className='font-mont' springConfig={presets.gentle}>{TEXTS[index % TEXTS.length]}</TextTransition>
+          Mayank Kashyap
+          {/* <TextTransition delay={1} className='font-mont' springConfig={presets.gentle}>{TEXTS[index % TEXTS.length]}</TextTransition> */}
 
         </h1>
         
