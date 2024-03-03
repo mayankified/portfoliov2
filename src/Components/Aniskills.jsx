@@ -42,7 +42,7 @@ class TagsCloud {
         this.#sphere = new FibonacciSphere(this.#tags.length);
         this.#rotationAxis = [1, 0, 0];
         this.#rotationAngle = 0;
-        this.#rotationSpeed = 0;
+        this.#rotationSpeed =0.01;
 
         this.#updatePositions();
         this.#initEventListeners();
