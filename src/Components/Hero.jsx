@@ -49,7 +49,7 @@ const Hero = () => {
       </div>
 
       <div id='hero' className='w-full h-[100vh] justify-center z-10 flex flex-col items-center'>
-        <h1 className=' overflow-visible font-caveat px-3 font-bold ss:text-[130px] text-[90px] herotext text-center '>
+        <h1 className=' overflow-visible font-caveat px-3 font-bold ss:text-[130px] text-[90px] leading-none herotext text-center '>
 
           {/* मयंक कश्यप */}
           Mayank Kashyap

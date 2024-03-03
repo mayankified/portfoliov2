@@ -36,17 +36,17 @@ const Contacts = () => {
       try {
         await axios.post(`https://api.telegram.org/bot6824661380:AAEsjkVBLbpMTN095uZh-KfIlD4joE6K3YU/sendMessage?chat_id=5274938130&text=${msg}`)
         setload(false)
-        toast("Message sent successfully")
+        toast("Message sent successfully 😼")
         setdata({
           email: '',
           message: ''
         });
 
       } catch (error) {
-        console.error('Error sending message', error);
+        toast.error('Error sending message 🥲');
       }
     } else {
-      toast.error("Fill the empty field")
+      toast.error("Fill the empty field 😈")
     }
 
   };
