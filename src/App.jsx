@@ -10,7 +10,6 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loader from './Components/Loader'
 import Aniskills from './Components/Aniskills'
-// import CursorComponent from './Components/Cursor'
 
 const App = () => {
 
@@ -20,7 +19,7 @@ const App = () => {
     setScreenLoading(true);
     setTimeout(() => {
       setScreenLoading(false);
-    }, 3000);
+    }, 2800);
   }, []);
 
   return (

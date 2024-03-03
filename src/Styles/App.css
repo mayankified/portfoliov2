@@ -3,6 +3,8 @@
 @import "tailwindcss/utilities";
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 * {
   font-family: Poppins;
@@ -237,7 +239,7 @@
   padding: 1rem 2rem;
   border-radius: 1.25rem;
   font-family: "Poppins", sans-serif;
-  color: rgb(124, 124, 124);
+  color: rgb(79, 79, 79);
   font-weight: 500;
   font-size: 25px;
   box-sizing: content-box;
@@ -273,7 +275,7 @@
   display: block;
   height: 100%;
   padding-left: 6px;
-  color: #956afa;
+  color: #787878;
   animation: spin_4991 4s infinite;
 }
 
