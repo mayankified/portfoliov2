@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import a from '../assets/1.jpg'
+// import a from '../assets/1.jpg'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
@@ -9,7 +9,6 @@ const skill = [
   {
     "id": 1,
     "name": 'HTML',
-    'bg': a
   },
   {
     "id": 2,

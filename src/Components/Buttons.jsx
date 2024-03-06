@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Button1 = (props) => {
     return (
-        <a className='w-full flex justify-center' href={props.link} >
+        <a target='_blank' className='w-full flex justify-center' href={props.link} >
             <button className="w-[150px] bg-black h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#009b49] before:to-[rgb(105,184,141)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]">
                 Live Demo
             </button>
@@ -12,7 +12,7 @@ export const Button1 = (props) => {
 
 export const Button2 = (props) => {
     return (
-        <a  href={props.link} className='w-full flex justify-center'>
+        <a  target='_blank' href={props.link} className='w-full flex justify-center'>
             <button className='btn px-4 py-3 bg-[#348e5e]'>
                 <div className="svg-wrapper-1">
                     <div className="svg-wrapper">
