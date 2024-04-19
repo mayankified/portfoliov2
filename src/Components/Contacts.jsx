@@ -46,7 +46,7 @@ const Contacts = () => {
         toast.error('Error sending message 🥲');
       }
     } else {
-      toast.error("Fill the empty field 😈")
+      toast.error("Fill the empty field ")
     }
 
   };
